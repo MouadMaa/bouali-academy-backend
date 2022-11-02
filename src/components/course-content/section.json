@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_course_content_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "equals",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Lecture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course-content.lecture"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

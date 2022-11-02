@@ -15,10 +15,42 @@
     "name": {
       "type": "string"
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "course-content.lecture",
+        "course-content.section"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "Instructor": {
+      "type": "string",
+      "default": "Bouali Zakaria"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "lessons": {
+      "type": "integer"
     }
   }
 }
