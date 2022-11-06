@@ -1,4 +1,5 @@
 export default ({ env }) => ({
+  ckeditor: true,
   upload: {
     config: {
       provider: "cloudinary",

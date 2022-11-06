@@ -1,19 +1,21 @@
 {
   "collectionName": "components_course_content_lectures",
   "info": {
-    "displayName": "lecture",
+    "displayName": "lesson",
     "icon": "video",
     "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": false,
+      "required": true
     },
     "video": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "videos"
       ]
