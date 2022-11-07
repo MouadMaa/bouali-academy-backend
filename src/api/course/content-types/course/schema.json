@@ -46,15 +46,15 @@
     "lessons": {
       "type": "component",
       "repeatable": true,
-      "component": "course-lessons.lecture"
+      "component": "course.lecture"
     },
     "instructor_image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
