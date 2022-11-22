@@ -60,6 +60,12 @@
       "type": "uid",
       "targetField": "name",
       "required": true
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "course"
     }
   }
 }
