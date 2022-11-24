@@ -26,16 +26,6 @@
     },
     "price": {
       "type": "decimal"
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "paid",
-        "unpaid"
-      ]
-    },
-    "checkoutSession": {
-      "type": "string"
     }
   }
 }
