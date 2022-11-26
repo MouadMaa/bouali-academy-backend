@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "testimonials",
+  "collectionName": "abouts",
   "info": {
-    "singularName": "testimonial",
-    "pluralName": "testimonials",
-    "displayName": "Testimonial",
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
     "description": ""
   },
   "options": {
@@ -13,10 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "testimonials": {
-      "displayName": "Testimonial",
       "type": "component",
       "repeatable": true,
-      "component": "home.testimonial"
+      "component": "about.testimonial"
     }
   }
 }
