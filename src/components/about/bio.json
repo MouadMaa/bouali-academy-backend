@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_bios",
+  "info": {
+    "displayName": "bio",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

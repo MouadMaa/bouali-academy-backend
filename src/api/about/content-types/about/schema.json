@@ -16,6 +16,11 @@
       "type": "component",
       "repeatable": true,
       "component": "about.testimonial"
+    },
+    "bio": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.bio"
     }
   }
 }
