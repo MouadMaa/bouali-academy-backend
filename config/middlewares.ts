@@ -8,7 +8,7 @@ export default [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
-  "global::authUser",
+  "api::order.auth-user",
   {
     name: "strapi::security",
     config: {
