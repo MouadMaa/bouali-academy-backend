@@ -1,20 +1,5 @@
 export default ({ env }) => ({
   ckeditor: true,
-  graphql: {
-    enabled: true,
-    config: {
-      endpoint: "/graphql",
-      shadowCRUD: true,
-      playgroundAlways: process.env.NODE_ENV === "development",
-      depthLimit: 50,
-      amountLimit: 100,
-      defaultLimit: 100,
-      maxLimit: 100,
-      apolloServer: {
-        tracing: true,
-      },
-    },
-  },
   upload: {
     config: {
       provider: "cloudinary",
