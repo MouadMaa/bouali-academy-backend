@@ -4,8 +4,6 @@
 
 import { factories } from "@strapi/strapi";
 
-// import stripe from "stripe";
-
 export default factories.createCoreController(
   "api::order.order",
   ({ strapi }) => ({
