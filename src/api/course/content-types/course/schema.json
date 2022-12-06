@@ -72,6 +72,13 @@
     },
     "prev_price": {
       "type": "decimal"
+    },
+    "url": {
+      "type": "string",
+      "unique": false
+    },
+    "overview_url": {
+      "type": "string"
     }
   }
 }
