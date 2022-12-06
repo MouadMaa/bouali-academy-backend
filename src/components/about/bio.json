@@ -8,7 +8,25 @@
   "options": {},
   "attributes": {
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true,
+      "maxLength": 700
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "function": {
+      "type": "string",
+      "required": true
     }
   }
 }

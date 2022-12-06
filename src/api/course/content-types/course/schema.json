@@ -43,11 +43,6 @@
         "images"
       ]
     },
-    "lessons": {
-      "type": "component",
-      "repeatable": true,
-      "component": "course.lecture"
-    },
     "instructor_image": {
       "type": "media",
       "multiple": false,
@@ -66,6 +61,17 @@
       "relation": "oneToMany",
       "target": "api::order.order",
       "mappedBy": "course"
+    },
+    "duration": {
+      "type": "decimal",
+      "required": true
+    },
+    "lessons": {
+      "type": "integer",
+      "required": true
+    },
+    "prev_price": {
+      "type": "decimal"
     }
   }
 }
