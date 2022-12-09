@@ -73,12 +73,21 @@
     "prev_price": {
       "type": "decimal"
     },
-    "url": {
-      "type": "string",
-      "unique": false
-    },
     "overview_url": {
       "type": "string"
+    },
+    "lesson": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lesson.lesson",
+      "mappedBy": "course"
+    },
+    "review": {
+      "type": "decimal",
+      "default": 4.6,
+      "min": 4.5,
+      "max": 4.9,
+      "required": true
     }
   }
 }
