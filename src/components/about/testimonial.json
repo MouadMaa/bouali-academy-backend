@@ -17,11 +17,6 @@
       "required": false,
       "default": "Student"
     },
-    "content": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 250
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -29,6 +24,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 260
     }
   }
 }

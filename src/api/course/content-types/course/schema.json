@@ -17,50 +17,38 @@
       "required": true,
       "unique": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
-    "instructor": {
-      "type": "string",
-      "default": "Bouali Zakaria",
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
       "required": true
     },
     "price": {
       "type": "decimal",
       "required": false
     },
+    "prev_price": {
+      "type": "decimal"
+    },
+    "overview_url": {
+      "type": "string",
+      "required": true
+    },
     "cover": {
       "type": "media",
       "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "instructor": {
+      "type": "string",
+      "default": "Bouali Zakaria",
+      "required": true
     },
     "instructor_image": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
-    "orders": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order.order",
-      "mappedBy": "course"
+      "allowedTypes": ["images"]
     },
     "duration": {
       "type": "decimal",
@@ -70,24 +58,33 @@
       "type": "integer",
       "required": true
     },
-    "prev_price": {
-      "type": "decimal"
+    "review": {
+      "type": "decimal",
+      "default": 4.6,
+      "min": 4,
+      "max": 4.9,
+      "required": true
     },
-    "overview_url": {
-      "type": "string"
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "course"
     },
     "lesson": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::lesson.lesson",
       "mappedBy": "course"
-    },
-    "review": {
-      "type": "decimal",
-      "default": 4.6,
-      "min": 4.5,
-      "max": 4.9,
-      "required": true
     }
   }
 }

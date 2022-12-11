@@ -7,12 +7,11 @@
   },
   "options": {},
   "attributes": {
-    "content": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 700
-    },
     "name": {
+      "type": "string",
+      "required": true
+    },
+    "function": {
       "type": "string",
       "required": true
     },
@@ -20,13 +19,12 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
-    "function": {
-      "type": "string",
-      "required": true
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 700
     }
   }
 }
