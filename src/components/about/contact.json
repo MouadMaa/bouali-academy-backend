@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "office": {
+      "type": "string"
+    },
+    "office_map": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

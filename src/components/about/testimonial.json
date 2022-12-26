@@ -28,7 +28,7 @@
     "content": {
       "type": "richtext",
       "required": true,
-      "maxLength": 260
+      "maxLength": 360
     }
   }
 }

@@ -21,6 +21,18 @@
       "type": "component",
       "repeatable": false,
       "component": "about.bio"
+    },
+    "social": {
+      "displayName": "Social",
+      "type": "component",
+      "repeatable": false,
+      "component": "about.social"
+    },
+    "contact": {
+      "displayName": "Contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "about.contact"
     }
   }
 }

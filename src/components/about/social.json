@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "youtube": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    }
+  }
+}
